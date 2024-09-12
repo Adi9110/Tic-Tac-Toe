@@ -1,4 +1,3 @@
-import java.util.Random;
 import java.util.Scanner;
 class Tic
 {
@@ -52,7 +51,7 @@ class Tic
     public byte checkWin()
     {//check for all 3 fields has same value ,then check its X or O;
         //Horizontal
-        boolean k=false;
+        //boolean k=false;
         for(int i=0;i<9;i=i+3)
         { 
             if(play[i]==play[i+1] && play[i]==play[i+2])
@@ -149,10 +148,5 @@ public class App
         }
         else
             System.out.println("Congratulations "+p1.P2name+" is the Winner");
-        // Random r=new Random();
-        // for(int i=0;i<10;i++)
-        // {   int k=r.nextInt(0, 10);
-        //     System.out.println(k);
-        // }
     }  
 }
